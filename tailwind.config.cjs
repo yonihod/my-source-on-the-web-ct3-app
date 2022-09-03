@@ -1,9 +1,13 @@
-/** @type {import('tailwindcss').Config} */
+const { colors } = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       colors: {
+        primary: colors.yellow,
         instagram: "#E1306C",
         linkedin: "#2867B2",
         github: "#211F1F",

@@ -1,14 +1,8 @@
-import {
-  FaDev,
-  FaInfoCircle,
-  FaSignLanguage,
-  GoTools,
-  IoIosDocument,
-  MdPerson,
-  MdSchool,
-  FaGamepad,
-  MdWork,
-} from "../components/Icons";
+import { FaDev, FaGamepad, FaInfoCircle, FaSignLanguage } from "react-icons/fa";
+import { IoIosDocument } from "react-icons/io";
+import { MdPerson, MdSchool, MdWork } from "react-icons/md";
+import { GoTools } from "react-icons/go";
+
 
 const sections = [
   { id: "about-me", title: "About Me", icon: MdPerson },
