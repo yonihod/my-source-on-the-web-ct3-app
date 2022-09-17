@@ -1,31 +1,31 @@
 [
   {
-    "icon": "../images/skills/www.svg",
+    "icon": "www",
     "name": "Web Design & Development",
     "tech": "Javascript,ES6,HTML,CSS,SASS,jQuery"
   },
   {
-    "icon": "../images/skills/react.svg",
+    "icon": "react",
     "name": "Frontend Javascript Frameworks",
     "tech": "Angular,Svelte,ReactJS,Gatsby,AngularJS"
   },
   {
-    "icon": "../images/skills/nodejs.svg",
+    "icon": "nodejs",
     "name": "Backend Javascript Frameworks",
     "tech": "Sveltekit,Node.js,Express.js,Koa,Next.js"
   },
   {
-    "icon": "../images/skills/backend.svg",
+    "icon": "backend",
     "name": "Backend Technologies",
     "tech": "PHP, ZendFramework, nginx, Java, Springboot"
   },
   {
-    "icon": "../images/skills/database.svg",
+    "icon": "database",
     "name": "Database Management System",
     "tech": "MySQL/MongoDB/DynamoDB"
   },
   {
-    "icon": "../images/skills/code.svg",
+    "icon": "code",
     "name": "Other",
     "tech": "AWS, Git, Jira, Firebase, Linux, Wordpress, Jenkins, Sentry"
   }

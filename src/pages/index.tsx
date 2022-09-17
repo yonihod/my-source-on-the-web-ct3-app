@@ -1,11 +1,13 @@
-import Education from "@/sections/Education";
-import Work from "@/sections/Work";
 import type { NextPage } from "next";
-
 import Head from "next/head";
-import Wrapper from "../components/Wrapper";
-import AboutMe from "../sections/AboutMe";
-import Hero from "../sections/Hero";
+
+import Wrapper from "@components/Wrapper";
+
+import Education from "@sections/Education";
+import Skills from "@sections/Skills";
+import Work from "@sections/Work";
+import AboutMe from "@sections/AboutMe";
+import Hero from "@sections/Hero";
 
 const Home: NextPage = () => {
   
@@ -28,6 +30,7 @@ const Home: NextPage = () => {
             <Work/>
             <Education/>
           </section>
+          <Skills/>
         </main>
       </Wrapper>
     </>

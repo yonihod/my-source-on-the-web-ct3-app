@@ -28,6 +28,7 @@
       "@utils/*": ["./src/utils/*"],
       "@assets/*": ["./src/assets/*"],
       "@data/*": ["./src/data/*"],
+      "@sections/*": ["./src/sections/*"],
     }
 
   },
