@@ -1,22 +1,22 @@
 [
   {
-    "icon": "../images/work/dsgai.png",
+    "icon": "dsgai",
     "title": "DSG",
     "subtitle": "Senior Full Stack Developer",
     "period": "Feb '22 - Today'",
     "location": "Tel Aviv, Israel",
-    "specialization": "React.js, Typescript, Python, Azure, Docker, Recoil.JS, FastAPI, Python"
+    "specialization": "React.js, Typescript, Python, Azure, Docker, Kubernetes , FastAPI, Python, Recoil"
   },
   {
-    "icon": "../images/work/logiq.png",
-    "title": "Logiq",
+    "icon": "fixel",
+    "title": "Fixel",
     "subtitle": "Full Stack Developer",
-    "period": "Feb '21 - Today'",
+    "period": "Feb '21 - Feb '22",
     "location": "Tel Aviv, Israel",
     "specialization": "React.js, Node.js, AWS, PHP, Typescript, CICD, Docker, SVN/Git, Wordpress, Styled components, Firebase, Java Springboot, Jenkins, Sentry.io, Wordpress, SVN, Typescript"
   },
   {
-    "icon": "../images/work/panda-logo.png",
+    "icon": "panda",
     "title": "Panda O.S",
     "subtitle": "Full Stack Developer",
     "period": "Oct '17 - Feb '21",
@@ -24,14 +24,14 @@
     "specialization": "Angular.js, PHP, Wordpress, CSS, ES6, HTML5"
   },
   {
-    "icon": "../images/work/wix-logo.png",
+    "icon": "wix",
     "title": "Wix",
     "subtitle": "Student Position - Online Chat Customer Service",
     "period": "'august 12 - 13",
     "location": "Tel Aviv, Israel"
   },
   {
-    "icon": "../images/work/leumi-card.png",
+    "icon": "leumi",
     "title": "Leumi Card",
     "subtitle": "Customer Service Representative in the Certificate and Block Department",
     "period": "Jun '10 - Jul '12",

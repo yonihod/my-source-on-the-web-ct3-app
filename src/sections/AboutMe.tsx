@@ -1,30 +1,43 @@
-import Heading from "../components/Heading";
+import Heading from "@components/Heading";
 import { MdPerson } from "react-icons/md";
 import Image from "next/image";
-import AboutMeImage from "../assets/about-me/gamer.png";
-import {motion} from "framer-motion";
+import AboutMeImage from "@assets/about-me/gamer.png";
+import { motion } from "framer-motion";
+import { trpc } from '@utils/trpc';
+import { fadeIn, popLeft } from "@/lib/animation";
 
-const AboutMe = () => {
+
+const AboutMe: React.FC = () => {
+  const { isError, isLoading, data } = trpc.useQuery(["data.section", {
+    section: "about-me",
+  }]);
+
+  if (isLoading) return <div>Loading...</div>;
+
+  if (isError) return <div>Error</div>;
 
   return (
     <section id="about-me">
-      <Heading icon={MdPerson} title="About Me" />
-
-      <div className="grid lg:grid-cols-6 gap-12 items-center">
-        {/* <motion.div
-
-          initial={{opacity: 0, scale: .4}}
-          whileInView={{opacity: "1"}}
-          viewport={{once: true}} */}
-        {/* > */}
-          <div className="hidden md:block lg:col-span-2 w-1/3 lg:w-3/4 mx-auto duration-200 fadeInLeft">
-            <Image src={AboutMeImage} />
-          </div>
-        {/* </motion.div> */}
-        {/* <div
-          className="text-justify lg:col-span-4 wow fadeIn"
-          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-        /> */}
+      <div>
+        <Heading icon={MdPerson} title="About Me" />
+        <div className="grid lg:grid-cols-6 gap-12 items-center">
+          <motion.div
+            initial={'offscreen'}
+            whileInView={'onscreen'}
+            variants={popLeft}
+          >
+            <div className="md:block lg:col-span-2 mx-auto">
+              <Image src={AboutMeImage} alt={"about me image"} />
+            </div>
+          </motion.div>
+          <motion.div
+            variants={fadeIn}
+            initial={'offscreen'}
+            whileInView={'onscreen'}
+            className="text-justify lg:col-span-4 wow fadeIn"
+            dangerouslySetInnerHTML={{ __html: data.content }}
+          />
+        </div>
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { animateScroll as scroll, scroller } from "react-scroll";
 // import ThemeContext from "../context/ThemeContext";
 import sections from "../../data/sections";
-import styles from "./Navigation.module.css";
+import styles from "./Navigation.module.scss";
 import { IconContext } from "react-icons";
 import { MdMenu } from "react-icons/md";
 import { IoIosMoon, IoIosSunny } from "react-icons/io";

@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  scroll-snap-align: center;
 }
