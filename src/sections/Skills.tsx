@@ -14,6 +14,7 @@ const Skills = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {data.map(({ icon, name, tech }, index) => (
             <motion.div
+              viewport={{ once: true, amount: 0.8 }}
               key={`skill-${index}`}
               initial={{
                 opacity: 0,
@@ -25,6 +26,7 @@ const Skills = () => {
                 duration: 0.7,
                 delay: index * 0.2,
               }}
+
             >
               <div className="flex items-center gap-3">
 

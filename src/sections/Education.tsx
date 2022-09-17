@@ -15,6 +15,7 @@ const Education = () => {
           variants={popRight}
           initial={'offscreen'}
           whileInView={'onscreen'}
+          viewport={{ once: true }}
         >
           <Heading icon={MdSchool} title="Education" />
           <div className="flex">

@@ -25,12 +25,14 @@ const AboutMe: React.FC = () => {
             initial={'offscreen'}
             whileInView={'onscreen'}
             variants={popLeft}
+            viewport={{ once: true }}
           >
             <div className="md:block lg:col-span-2 mx-auto">
               <Image src={AboutMeImage} alt={"about me image"} />
             </div>
           </motion.div>
           <motion.div
+            viewport={{ once: true }}
             variants={fadeIn}
             initial={'offscreen'}
             whileInView={'onscreen'}

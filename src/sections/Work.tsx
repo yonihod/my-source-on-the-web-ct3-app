@@ -18,6 +18,7 @@ const Work = () => {
                 variants={popLeft}
                 initial={'offscreen'}
                 whileInView={'onscreen'}
+                viewport={{ once: true}}
             >
                 <Heading icon={MdWork} title="Work" />
 
